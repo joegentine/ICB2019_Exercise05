@@ -1,3 +1,6 @@
+
+echo "gender/experience" 
+cat wages.csv | cut -d, -f 1,2 | tr "," " " >new_wages.txt
 echo "Highest earner"
 cat wages.csv | sort -t , -k 4 -g | tail -n 1
 echo "Lowest earner"
